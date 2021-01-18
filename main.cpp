@@ -3,6 +3,7 @@
 #include "5_1.h"
 #include "5_2.h"
 #include "atomic_append.h"
+#include "getopts.h"
 #include <unistd.h>
 #include <stdio.h>
 int main(int argc, char *argv[])
@@ -11,6 +12,7 @@ int main(int argc, char *argv[])
     //test_cp(argv[1], argv[2]);
     //test_largefile();
     //test_append();
-    test_atomicappend();
+    //test_atomicappend();
+    test_getopts(argc,argv);
     return 0;
 }
